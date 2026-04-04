@@ -13,7 +13,7 @@ syn match aplquad   /\v[⎕&][A-Za-z]*/
 syn match aplident  /\v[A-Z][A-Z_a-z0-9]*/
 syn match aplnumber /\v¯?[0-9]+(\.[0-9]+)?/
 syn match aplname   /\v[⍺⍵∞πτ⍬]/
-syn match aplcmt    /\v(⍝|^#!).*$/
+syn match aplcmt    /\v(⍝|#).*$/
 
 hi def link aplcmt    comment
 hi def link aplname   constant
