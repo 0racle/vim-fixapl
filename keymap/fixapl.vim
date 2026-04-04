@@ -1,13 +1,15 @@
 scripte utf-8
 
 let a ='`1234567890-= ~!@#$%^&*()_+'
-let a.='qwertyuiop[]  QWERTYUIOP{} '
-let a.='asdfghjkl;''\ ASDFGHJKL:"| '
-let a.='zxcvbnm,./    ZXCVBNM<>?   '
-
 let b ='`₁₂¨⍢⍨˜÷×∞₀¯≠ ⍬⍣↺⍝⎊◶⪫§⍟⟨⟩¬±'
-let b.='⋈⍵∊⍴⍉↑↓⍳○⍉←↤  ⌽⍹⁅√⍨T↥↧⊚Oτ⊣⊢'
+
+let a.='qwertyuiop[]  QWERTYUIOP{} '
+let b.='⋈⍵∊⍴⍉↑↓⍳○⍉←↤  ⌽⍹⁅√⍨T↥↧⊚τ⊣⊢'
+
+let a.='asdfghjkl;''\ ASDFGHJKL:"| '
 let b.='⍺⊇⧻⊸⟜hj◡⎕⍎⍕\  ⍶⊃△FGHJ⍤⊔⍕⊙⌵ '
+
+let a.='zxcvbnm,./    ZXCVBNM<>?   '
 let b.='⊞□⋄⍋⌊⊡≡⍪⋅⫽    ⊕⊟⟠⍒⌈⬚≢≥≤⌿   '
 
 let p=exists('g:fixapl_prefix_key')?g:apl_prefix_key:'<Tab>'
