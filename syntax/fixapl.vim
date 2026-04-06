@@ -8,18 +8,17 @@ syn match aplmonad  /[¬¯±⌵√⌊⁅⌈?⋈⍉⍳⧻△▽□⋄⊡⊚⍋⍒
 syn match apldyad   /[=≠>≥<≤+-×÷|*⍟↥↧∊≡≢⊟⟠⍪⍴⌿⊇⊃⬚↑↓⌽⊔⊣⊢]/
 syn match apl2mod   /[⎊⍣⍢⍤◶⊸⟜○]/
 syn match apl1mod   /\v[\\\/⫽⍨˜◡⊙¨⊞⊕↺₀₁₂]/
-syn match aplpunct  /\v[(){}⟨⟩,‿↤←⎕§.]|(\[|\])/
+syn match aplpunct  /\v[(){}⟨⟩[\],‿↤←⎕§.]/
 syn match aplquad   /\v[⎕&][A-Za-z]*/
 syn match aplident  /\v[A-Z][A-Z_a-z0-9]*/
 syn match aplerror  /\v(([a-z]*)@<!)?[a-z]|[⍺⍵]/
 syn match aplarg    /\v[⍺a⍵w]/ contained
-syn match aplmonad  /\v(([a-z]*)@<!)?%(id|not|ng|sig|abs|sqr|flo|rou|cei|rol|rev|tra|iot|len|sha|fla|enc|fix|mer|whe|gru|grd|fmt|exc|ari)/
+syn match aplconst  /\v[∞πτ⍬]|(([a-z]*)@<!)?%(inf|pi|tau|emp)/
 syn match apldyad   /\v(([a-z]*)@<!)?%(lft|rgt|eq|nq|gt|ge|lt|le|add|sub|mul|div|mod|pow|log|max|min|mem|mat|nmt|par|cou|cat|res|rpl|sel|pic|fil|tak|dro|rot|gro)/
+syn match aplmonad  /\v(([a-z]*)@<!)?%(id|not|ng|sig|abs|sqr|flo|rou|cei|rol|rev|tra|iot|len|sha|fla|enc|fix|mer|whe|gru|grd|fmt|exc|ari)/
 syn match apl1mod   /\v(([a-z]*)@<!)?%(sb|mn|dy|slf|bac|cel|con|eac|pre|fol|twf|tab|win|rep)/
 syn match apl2mod   /\v(([a-z]*)@<!)?%(ctc|unt|und|rnk|cho|bef|aft|ov)/
-syn match aplname   /\v(([a-z]*)@<!)?%(inf|pi|tau|emp)/
 syn match aplnumber /\v¯?[0-9]+(\.[0-9]+)?/
-syn match aplconst  /\v[∞πτ⍬]/
 syn match aplcmt    /\v(⍝|#).*$/
 
 
