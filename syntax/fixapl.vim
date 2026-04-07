@@ -4,6 +4,8 @@ endif
 
 syn match aplescape contained /\\./
 syn region aplstring matchgroup=aplstring start=/"/ skip=/\\"/ end=/"/ contains=aplescape oneline
+syn match aplcherr  /\v'..*'/
+syn match aplchar   /\v'(\\.|.)'/ contains=aplescape
 syn match aplmonad  /[¬¯±⌵√⌊⁅⌈?⋈⍉⍳⧻△▽□⋄⊡⊚⍋⍒⍕⍎⪫⋅]/
 syn match apldyad   /[=≠>≥<≤+-×÷|*⍟↥↧∊≡≢⊟⟠⍪⍴⌿⊇⊃⬚↑↓⌽⊔⊣⊢]/
 syn match apl2mod   /[⎊⍣⍢⍤◶⊸⟜○]/
@@ -22,7 +24,7 @@ syn match aplnumber /\v¯?[0-9]+(\.[0-9]+)?/
 syn match aplcmt    /\v(⍝|#).*$/
 
 
-syn cluster aplsyntax contains=aplstring,aplmonad,apldyad,apl1mod,apl2mod,aplpunct,aplquad,aplident,aplerror,aplnumber,aplconst,aplcmt
+syn cluster aplsyntax contains=aplstring,aplchar,aplmonad,apldyad,apl1mod,apl2mod,aplpunct,aplquad,aplident,aplerror,aplnumber,aplconst,aplcmt
 syn region apldfn extend keepend matchgroup=aplpunct start=/{/ end=/}/ contains=@aplsyntax,aplarg
 
 hi def link aplcmt    comment
@@ -35,9 +37,11 @@ hi def link aplpunct  delimiter
 hi def link aplquad   function
 hi def link aplident  normal
 hi def link aplstring string
+hi def link aplchar   string
 hi def link aplescape preproc
 hi def link aplmonad  function
 hi def link apldyad   preproc
 hi def link aplerror  error
+hi def link aplcherr  error
 
 let b:current_syntax='fixapl'
