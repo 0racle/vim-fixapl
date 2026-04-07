@@ -5,7 +5,7 @@ endif
 syn match aplescape contained /\\./
 syn region aplstring matchgroup=aplstring start=/"/ skip=/\\"/ end=/"/ contains=aplescape oneline
 syn match aplcherr  /\v'..*'/
-syn match aplchar   /\v'(\\.|.)'/ contains=aplescape
+syn match aplchar   /\v'\\?.'/ contains=aplescape
 syn match aplmonad  /[¬¯±⌵√⌊⁅⌈?⋈⍉⍳⧻△▽□⋄⊡⊚⍋⍒⍕⍎⪫⋅]/
 syn match apldyad   /[=≠>≥<≤+-×÷|*⍟↥↧∊≡≢⊟⟠⍪⍴⌿⊇⊃⬚↑↓⌽⊔⊣⊢]/
 syn match apl2mod   /[⎊⍣⍢⍤◶⊸⟜○]/
