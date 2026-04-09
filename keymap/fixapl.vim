@@ -12,7 +12,7 @@ let b.='⍺⊇⧻⊸⟜hj◡⎕⍎▽\  ⍶⊃△FGHJ⍤⊔⍕⊙⌵ '
 let a.='zxcvbnm,./    ZXCVBNM<>?   '
 let b.='⊞□⋄⍋⌊⊡≡⍪⋅⫽    ⊕⊟⟠⍒⌈⬚≢≥≤⌿   '
 
-let p=exists('g:fixapl_prefix_key')?g:apl_prefix_key:'<Tab>'
+let p = exists('g:fixapl_prefix_key') ? g:fixapl_prefix_key : '<Tab>'
 exec 'lno<buffer> '.p.'<space> ‿'
 let [k,v] = map([a,b], "split(v:val,'\\zs *')")
 for i in range(len(k))

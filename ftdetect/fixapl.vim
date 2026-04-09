@@ -1,1 +1,1 @@
-au BufRead,BufNewFile *.fxapl set filetype=fixapl
+au BufRead,BufNewFile *.fxapl,*.fixapl set filetype=fixapl
