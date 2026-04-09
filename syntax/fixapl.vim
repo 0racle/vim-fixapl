@@ -24,7 +24,7 @@ syn match aplnumber /\v¯?[0-9]+(\.[0-9]+)?/
 syn match aplcmt    /\v(⍝|#).*$/
 
 
-syn cluster aplsyntax contains=aplstring,aplchar,aplmonad,apldyad,apl1mod,apl2mod,aplpunct,aplquad,aplident,aplerror,aplnumber,aplconst,aplcmt
+syn cluster aplsyntax contains=aplstring,aplchar,aplmonad,apldyad,apl1mod,apl2mod,aplpunct,aplquad,aplident,aplerror,aplnumber,aplconst,aplcmt,apldfn
 syn region apldfn extend keepend matchgroup=aplpunct start=/{/ end=/}/ contains=@aplsyntax,aplarg
 
 hi def link aplcmt    comment
