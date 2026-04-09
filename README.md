@@ -13,7 +13,7 @@ Different highlight groups for monadic and dyadic symbols
 
 ### Prefix keyboard mappings
 
-As well as abbreviations, FIXAPL defines the prefix-key mappings. The default prefix key is `<Tab>`.
+As well as abbreviations, FIXAPL defines the prefix-key mappings. The default prefix key is `<Tab>`.  
 You can customize it be settings the `g:fixapl_prefix_key` global variable before the plugin loads.
 
 ### Code formatting
