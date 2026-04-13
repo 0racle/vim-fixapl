@@ -7,9 +7,9 @@ syn region aplstring matchgroup=aplstring start=/"/ skip=/\\"/ end=/"/ contains=
 syn match aplcherr  /\v'..*'/
 syn match aplchar   /\v'\\?.'/ contains=aplescape
 syn match aplmonad  /[¬¯±⌵√⌊⁅⌈?⋈⍉⍳⧻△▽□⋄⊡⊚⍋⍒⍕⍎⪫⋅]/
-syn match apldyad   /[-=≠>≥<≤+×÷|*⍟↥↧∊≡≢⊟⟠⍪⍴⌿⊇⊃⬚↑↓⌽⊔⊣⊢]/
+syn match apldyad   /[-=≠>≥<≤+×÷|*⍟↥↧∊≡≢⊟⟠⍪⍴⊠⊇⊃⬚↑↓⌽⊔⊣⊢]/
 syn match apl2mod   /[⎊⍣⍢⍤◶⊸⟜○]/
-syn match apl1mod   /\v[\\\/⫽⍨˜◡⊙¨⊞⊕↺₀₁₂]/
+syn match apl1mod   /\v[\\\/⫽⌿⍨˜◡⊙¨⊞⊕↺₀₁₂]/
 syn match aplpunct  /\v[(){}⟨⟩[\],‿↤←⎕§.]/
 syn match aplquad   /\v[⎕&][A-Za-z]*/
 syn match aplident  /\v[A-Z][A-Z_a-z0-9]*/

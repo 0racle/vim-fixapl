@@ -4,10 +4,10 @@ let a ='`1234567890-= ~!@#$%^&*()_+'
 let b ='`₁₂¨⍢⍨˜÷×∞₀¯≠ ⍬⍣↺⍝⎊◶⪫§⍟⟨⟩¬±'
 
 let a.='qwertyuiop[]  QWERTYUIOP{} '
-let b.='⋈⍵∊⍴⍉↑↓⍳○π←↤  ⌽⍹⁅√T↥↧⊚Oτ⊣⊢ '
+let b.='⋈⍵∊⍴⍉↑↓⍳○π←↤  ⌽⍹⁅⊠T↥↧⊚Oτ⊣⊢ '
 
 let a.='asdfghjkl;''\ ASDFGHJKL:"| '
-let b.='⍺⊇⧻⊸⟜hj◡⎕⍎▽\  ⍶⊃△FGHJ⍤⊔⍕⊙⌵ '
+let b.='⍺⊇⧻⊸⟜hj◡⎕⍎▽√  ⍶⊃△FGHJ⍤⊔⍕⊙⌵ '
 
 let a.='zxcvbnm,./    ZXCVBNM<>?   '
 let b.='⊞□⋄⍋⌊⊡≡⍪⋅⫽    ⊕⊟⟠⍒⌈⬚≢≥≤⌿   '
